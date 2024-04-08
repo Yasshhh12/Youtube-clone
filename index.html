@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date and Time</title>
+</head>
+<body>
+    <!-- Container to display date and time -->
+    <div id="datetime"></div>
+
+    <!-- Button to update date and time -->
+    <button onclick="printDateTime()">Show Date and Time</button>
+
+    <script>
+        // Function to get current date and time
+        function printDateTime() {
+            // Create a new Date object
+            var currentDate = new Date();
+
+            // Extract individual components of the date and time
+            var date = currentDate.toLocaleDateString(); // Get the date (in the format mm/dd/yyyy)
+            var time = currentDate.toLocaleTimeString(); // Get the time (in the format hh:mm:ss)
+
+            // Display the date and time in a specific format
+            var dateTimeString = "Current Date: " + date + "<br>" + "Current Time: " + time;
+
+            // Output the date and time to an element with id "datetime"
+            document.getElementById("datetime").innerHTML = dateTimeString;
+        }
+    </script>
+</body>
+</html>
