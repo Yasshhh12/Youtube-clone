@@ -3,7 +3,22 @@
     width: 300px;
 }
 
-.caption{
+.video-title{
     width: 300px;
+}
+
+.video-author{
+    width: 300px;
+    display: inline-block;
+}
+
+.search-bar{
+    display: block;
+}
+
+.video-preview{
+    display: inline-block;
+    width: 300px;
+    margin-right: 15px;
 }
 
